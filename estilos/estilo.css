@@ -1,0 +1,1112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240,240,240);
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 74px;
+    background-color: rgba(45,45 ,46, 1);
+    position: fixed;
+    top:0%;
+    z-index: 100;
+}
+
+.header_logo{
+    display: inline-block;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    margin-left: 4px;
+    position: absolute;
+}
+.header_nav{
+    background-color: rgba(45,45 ,46, 1);
+}
+.header_ul{ 
+    display: flex;
+    height: 74px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 30%;
+    background-color: rgba(45,45 ,46, 1);
+   
+}
+
+.header_li{
+    
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+
+}
+
+.header_li a{
+    background-color: rgba(45,45 ,46, 1);
+    display: block;
+    color:#fff;
+    font-size: 20px;
+    font-weight:normal;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header_li a:hover{
+    
+    font-weight: bold;
+    color: rgb(224, 14, 13);
+}
+
+/* -------------INDEX ------------------------------*/
+.main_index{
+    width: 100%;
+    height: 100%;
+    margin-top:74px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+}
+
+.banner_h1{
+    position: absolute;
+    top:320px;
+    background-color: rgba(45,45 ,46, 0.9);
+    color: rgb(260,260,260);
+    padding-right: 35%;
+    padding-left: 2%;
+    font-size: 50px;
+    
+}
+
+.banner_frontal{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: 15px;
+    margin:0
+}
+
+.banner_contacto{
+    display: block;
+    position: absolute;
+    top:10px;
+    margin-left: 45%;
+    color: #fff;
+    z-index: 20;
+    background-color: rgba(45,45 ,46, 0.4);
+    border: 2px solid #fff;
+    border-radius: 7%;
+    padding:10px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.banner_contacto:hover{
+    background-color: rgba(45,45 ,46, 0.6);
+    font-size: 26px;
+}
+
+.banner_h2{
+   text-align: center;
+   margin-left:40px;
+   margin-right: 40px;
+   margin-top:20px;
+   font-size: 30px;
+   font-weight: bold;
+   border-bottom: 2px solid #000;
+}
+
+.principal{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px auto auto 20px;
+    justify-content: space-around ;
+}
+
+.principal_productos, .principal_servicios, .principal_trayectoria, .principal_atencion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top:15px;
+}
+
+.principal_h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+.principal_img{
+    border-radius: 50%;
+    border: 1px solid rgb(45,45 ,46);
+    margin:8px;
+}
+
+.principal_productos a, .principal_servicios a{
+    position: absolute;
+    top: 50%;
+    background-color: rgba(45,45 ,46, 0.6);
+    border: 2px solid #fff;
+    border-radius: 7%;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.principal_productos a:hover, .principal_servicios a:hover{
+
+    background-color: rgba(45,45 ,46, 0.8);
+    font-size: 22px;
+}
+
+.data{
+    background-color: rgba(45,45 ,46, 0.8);
+    padding: 15px;
+    margin-top:30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.data_horarios{
+    flex-grow: 2;
+    border: 1px solid #fff;
+    background-color:rgb(40,40 ,41);
+    margin: 15px;
+    text-align: center;
+    color: #fff;
+    padding-top:5px;
+}
+
+.data_horarios h3, .data_horarios p {
+    background-color: rgb(40,40 ,41);
+
+}
+.data_horarios a{
+    color: #fff;   
+    background-color: rgb(40,40 ,41);
+}
+
+.data_map{
+    flex-grow: 3;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .data{
+        flex-direction: column;
+    }
+
+    .mapa{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width: 650px) {
+
+.header_nav{
+    display: none;
+}
+.banner_h1{
+    font-size: 30px;
+}
+
+.principal_img{
+    max-width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.data_horarios{
+
+    max-width: 100%;
+    font-size: 70%;
+
+}
+
+.banner_contacto{
+    margin-left: 40%;
+}
+}
+@media screen and (max-width: 350px) {
+
+  .header_nav{
+        display: none;
+  }
+
+  .banner_h1{
+      font-size: 20px;
+      padding-right: 15%;
+  }
+  
+  .principal_h3{
+      font-size: 15px;
+  }
+
+  .banner_h2{
+      font-size: 20px;
+  }
+  .principal_img{
+    max-width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.data_horarios{
+
+    max-width: 100%;
+    font-size: 70%;
+
+}
+
+.banner_contacto{
+    margin-left:30%;
+}
+
+}
+
+@media screen and (min-width: 1550px) {
+    .principal_img{
+        margin-left:100px;
+    }
+
+    .banner_contacto{
+        margin-left:50%;
+    }
+}
+
+/* ---------------- NOSOTROS ---------------------*/
+
+.main_nosotros{
+    width: 100%;
+    height: 100%;
+    margin-top:90px;
+}
+.main_div{
+    background-image: url(../images/nosotros.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-attachment: fixed;
+}
+
+.div_h1{
+    position:relative;
+    top:5%;
+    height: 80%;
+    background-color: rgba(0,0,0,0);
+}
+
+.h1 {
+    position: sticky;
+    top:30vh;
+    background-color: rgba(45,45 ,46, 0.8);
+    padding-left:20%;
+    font-size: 60px;
+    position: absolute;
+    color:#fff;
+}
+
+.main_p1{
+    background-image: url(../images/nostros1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-attachment: fixed;
+    margin-top:15px;
+}
+
+.div_p1{
+    position:relative;
+    top:20%;
+    height: 50%;
+    background-color: rgba(0,0,0,0);
+    width: 95%;
+    margin:auto;
+}
+.p1 {
+    position: sticky;
+    margin-top:20px;
+    top:50vh;
+    background-color: rgba(45,45 ,46, 0.8);
+    text-align:center;
+    font-size: 30px;
+    padding: 10px 10% 10px 10%;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+    
+}
+
+.main_p2{
+    background-image: url(../images/nosotros2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-attachment: fixed;
+    margin-top:15px;
+}
+.div_p2{
+    position:relative;
+    top:10%;
+    height: 50%;
+    background-color: rgba(0,0,0,0);
+    width: 95%;
+    margin:auto;
+}
+.p2 {
+    position: sticky;
+    top:50vh;
+    background-color: rgba(45,45 ,46, 0.8);
+    text-align:center;
+    font-size: 25px;
+    padding: 10px 5% 10px 5%;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+    
+}
+
+.main_p3{
+    background-image: url(../images/nosotros3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-attachment: fixed;
+    margin-top:15px;
+    
+}
+.div_p3{
+    position:relative;
+    top:20%;
+    height: 50%;
+    background-color: rgba(0,0,0,0);
+    width: 95%;
+    margin:auto;
+}
+.p3 {
+    position: sticky;
+    top:40vh;
+    background-color: rgba(45,45 ,46, 0.8);
+    text-align:center;
+    font-size: 25px;
+    padding: 10px 5% 10px 5%;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:850px){
+    .main_div{
+        background-image: url(../images/nosotrosmobile.jpg);
+    }
+
+    .main_p3{
+        background-image: url(../images/nosotros3mobile.jpg);
+    }
+}
+
+@media screen and (max-width:450px){
+
+    .p1,.p2,.p3{
+        font-size: 20px;
+    }
+
+    .h1{
+        font-size:30px;
+    }
+
+    .main_p2{
+        background-image: url(../images/nosotros2mobile.jpg);
+    }
+    
+    .div_p1,.div_p2,.div_p3{
+        width: 100%;
+        
+    }
+
+    .p1,.p2,.p3{
+        padding-left:1%;
+        margin-left:5px;
+        margin-right: 5px;
+    }
+
+    
+}
+
+/* ----------------- PRODUCTOS ------------------*/
+
+.main_productos{
+    width: 100%;
+    height: 100%;
+    margin-top:90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productos_h1{
+    background-image: url(../images/productos1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.productos_h1 h1{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 3em;
+    position: relative;
+    top: 30%;
+    padding-left: 30px;
+}
+
+.productos_arenas{
+    background-image: url(../images/productos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.productos_arenas h2{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 2em;
+    position: relative;
+    top: 30%;
+    padding-left: 20px;
+    
+}
+
+.productos_arenas ul{
+    background-color: rgba(45,45 ,46,0);
+    color: #fff;
+    width: 85%;
+    font-size: 1.5em;
+    position: relative;
+    top: 30%;
+    margin-top:10px;
+}
+
+.productos_arenas ul li{
+   list-style: none;
+   background-color: rgba(45,45 ,46,0.8);
+   padding-left: 50px;
+}
+
+.productos_piedras{
+    background-image: url(../images/productos3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.productos_piedras h2{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 2em;
+    position: relative;
+    top: 30%;
+    padding-left: 20px;
+    
+}
+
+.productos_piedras ul{
+    background-color: rgba(45,45 ,46,0);
+    color: #fff;
+    width: 85%;
+    font-size: 1.5em;
+    position: relative;
+    top: 30%;
+    margin-top:10px;
+}
+
+.productos_piedras ul li{
+   list-style: none;
+   background-color: rgba(45,45 ,46,0.8);
+   padding-left: 50px;
+}
+
+.productos_escombros{
+    background-image: url(../images/productos2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.productos_escombros h2{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 2em;
+    position: relative;
+    top: 30%;
+    padding-left: 20px;
+    
+}
+
+.productos_escombros ul{
+    background-color: rgba(45,45 ,46,0);
+    color: #fff;
+    width: 85%;
+    font-size: 1.5em;
+    position: relative;
+    top: 30%;
+    margin-top:10px;
+}
+
+.productos_escombros ul li{
+   list-style: none;
+   background-color: rgba(45,45 ,46,0.8);
+   padding-left: 50px;
+}
+
+.productos_rellenos{
+    background-image: url(../images/productos4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.productos_rellenos h2{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 2em;
+    position: relative;
+    top: 30%;
+    padding-left: 20px;
+    
+}
+
+.productos_rellenos ul{
+    background-color: rgba(45,45 ,46,0);
+    color: #fff;
+    width: 85%;
+    font-size: 1.5em;
+    position: relative;
+    top: 30%;
+    margin-top:10px;
+}
+
+.productos_rellenos ul li{
+   list-style: none;
+   background-color: rgba(45,45 ,46,0.8);
+   padding-left: 50px;
+}
+
+.productos_puzolana{
+    background-image: url(../images/productos5.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.productos_puzolana h2{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 2em;
+    position: relative;
+    top: 30%;
+    padding-left: 20px;
+}
+
+.productos_puzolana p{
+    background-color: rgba(45,45 ,46,0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 1.5em;
+    position: relative;
+    top: 30%;
+    margin-top:10px;
+    padding-left: 50px;
+
+}
+
+/* ---------------------- SERVICIOS -------------------*/
+
+.main_servicios{
+    width: 100%;
+    height: 100%;
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article_titulo{
+    width:100%;
+    background-image: url(../images/servicios02.png);
+    background-size:cover;
+    height: 800px;
+}
+
+.titulo_h1{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 3em;
+    position: relative;
+    top: 30%;
+    padding-left: 30px;
+}
+
+.servicios_alquiler{
+    background-image: url(../images/servicios03.png);
+    width: 100%;
+    background-size: cover;
+    height: 800px;
+    margin-top: 5px;
+}
+
+.servicios_alquiler h2{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 3em;
+    position: relative;
+    top: 30%;
+    padding-left: 30px;
+}
+
+.servicios_alquiler h3{
+    background-color: rgba(45,45 ,46, 0.7);
+    color: #fff;
+    width: 75%;
+    font-size: 2em;
+    position: relative;
+    top: 32%;
+    padding-left: 45px;
+    text-align:center;
+}
+
+.servicios_alquiler p{
+    background-color: rgba(45,45 ,46, 0.6);
+    color: #fff;
+    width: 75%;
+    font-size: 2em;
+    position: relative;
+    top: 35%;
+    padding-left: 60px;
+    text-align: center;
+}
+
+.servicios_nivelacion{
+    background-image: url(../images/servicios05.png);
+    width: 100%;
+    background-size: cover;
+    height: 800px;
+    margin-top: 5px;
+}
+
+.servicios_nivelacion h2{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 3em;
+    position: relative;
+    top: 30%;
+    padding-left: 30px
+}
+
+.servicios_nivelacion h3{
+    background-color: rgba(45,45 ,46, 0.7);
+    color: #fff;
+    width: 75%;
+    font-size: 2em;
+    position: relative;
+    top: 32%;
+    padding-left: 45px;
+    text-align: center;
+}
+
+.servicios_demolicion{
+    background-image: url(../images/servicios06.png);
+    width: 100%;
+    background-size: cover;
+    height: 800px;
+    margin-top: 5px;
+}
+
+.servicios_demolicion h2{
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+    width: 85%;
+    font-size: 3em;
+    position: relative;
+    top: 30%;
+    padding-left: 30px
+}
+
+.servicios_link{
+position: relative;
+border: 3px solid #fff;
+text-decoration: none;
+top: 60%;
+left: 45%;
+background-color: rgba(45,45 ,46, 0.6);
+color: #fff;
+padding:10px;
+font-size: 2em;
+border-radius: 7%;
+}
+
+.servicios_link:hover{
+    background-color: rgba(45,45 ,46, 0.8);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:800px){
+
+    .servicios_alquiler h2{
+        width: 100%;
+    }
+    
+    .servicios_alquiler h3{
+        width: 100%;
+    }
+    
+    .servicios_alquiler p{
+        width: 100%;
+    }
+
+    .servicios_nivelacion h2{
+        width: 100%;
+    }
+    
+    .servicios_nivelacion h3{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .servicios_nivelacion{
+        background-image: url(../images/servicios05.png);
+        width: 100%;
+        background-size: cover;
+        height: 800px;
+        margin-top: 5px;
+    }
+    
+    .servicios_nivelacion h2{
+        background-color: rgba(45,45 ,46, 0.8);
+        color: #fff;
+        width: 85%;
+        font-size: 2em;
+        position: relative;
+        top: 50%;
+        padding-left: 30px
+    }
+    
+    .servicios_nivelacion h3{
+        background-color: rgba(45,45 ,46, 0.7);
+        color: #fff;
+        width: 75%;
+        font-size: 1.5em;
+        position: relative;
+        top: 52%;
+        padding-left: 45px;
+        text-align: center;
+    }
+
+    .servicios_demolicion{
+        background-image: url(../images/servicios06mobile.png);
+        width: 100%;
+        background-size: cover;
+        height: 800px;
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width:450px){
+
+    .article_titulo{
+        width:98%;
+        background-image: url(../images/servicios02mobile.png);
+        background-size:cover;
+        height: 800px;
+        margin-top: 5px;
+    }
+
+    .titulo_h1{
+        font-size: 2em;
+    }
+
+    .servicios_alquiler{
+        background-image: url(../images/servicios03mobile.png);
+        width: 98%;
+        background-size: cover;
+        height: 800px;
+        margin-top: 5px;
+    }
+
+    .servicios_alquiler h2{
+        width: 100%;
+        font-size: 2em;
+        padding-left: 5px
+       
+    }
+    
+    .servicios_alquiler h3{
+        width: 100%;
+        font-size: 1.5em;
+        padding-left: 5px
+    }
+    
+    .servicios_alquiler p{
+        width: 100%;
+        font-size: 1.4em;
+        padding-left: 5px
+    }
+
+    .servicios_nivelacion{
+        background-image: url(../images/servicios05mobile.png);
+        width: 98%;
+        background-size: cover;
+        height: 800px;
+        margin-top: 5px;
+    }
+    
+    .servicios_nivelacion h2{
+        width: 100%;
+        font-size: 2em;
+        padding-left: 5px
+    }
+    
+    .servicios_nivelacion h3{
+        width: 100%;
+        font-size: 1.5em;
+        padding-left: 5px
+    }
+
+    .servicios_demolicion{
+        background-image: url(../images/servicios06mobile.png);
+        width: 98%;
+        background-size: cover;
+        height: 800px;
+        margin-top: 5px;
+    }
+    
+    .servicios_demolicion h2{
+        width: 100%;
+        font-size: 2em;
+        padding-left: 5px
+    }
+
+    .servicios_link{
+        left:35%;
+        font-size: 1.5em;
+
+}
+
+}
+
+
+/* ----------------------- CONTACTO ----------------*/
+
+.main_contacto{
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    margin-top:74px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-areas:
+        "imagen_contacto contacto_h1"
+        "imagen_contacto contacto_h2"
+        "imagen_contacto contacto_form";
+    grid-template-columns: 30% 65%;
+    justify-content: center;  
+    align-items: center;
+    background-image: radial-gradient(circle,rgba(240,240,240,1), rgb(155, 41, 41));
+    padding: 0;
+    
+}
+
+.contacto_h1{
+    grid-area: contacto_h1;
+    font-size: 50px;
+    justify-self: center;
+    width: 90%;
+    background-color: rgba(45,45 ,46, 0);
+    color: rgb(129, 7, 15);
+}
+
+.imagen_contacto{
+    grid-area: imagen_contacto;
+    justify-self: center;
+    width: 100%;
+    border: 4px solid #fff;
+    margin: 5px;
+    border-radius: 5%;
+}
+
+.contacto_h2{
+    grid-area: contacto_h2;
+    justify-self: center;
+    width: 90%;
+    font-size: 30px;
+    background-color: rgba(45,45 ,46, 0);
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.contacto_form{
+    grid-area: contacto_form;
+    justify-self: center;
+    width: 90%;
+    background-color: rgba(45,45 ,46, 0);
+}
+
+input{
+    margin: 5px;
+    width: 40%;
+    font-size: 18px;
+    background-color: rgba(45,45 ,46, 0);
+}
+
+.contacto_form h4{
+    font-size: 22px;
+    margin: 4px;
+    background-color: rgba(45,45 ,46, 0);
+}
+
+.motivo_div{
+    margin: auto;
+    background-color: rgba(45,45 ,46, 0);
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 50%;
+}
+
+.motivo_div h5{
+    margin: 5px;
+    border-left: 1px solid #000;
+    font-size: 15px;
+    background-color: rgba(45,45 ,46, 0);
+}
+
+.motivo_div input{
+   height: 1em;
+   border: 1px solid black;
+}
+.botones{
+    background-color: rgba(45,45 ,46, 0);
+}
+
+.botones input{
+    background-color: rgba(38, 38, 38, 0.6);
+    width: 30%;
+    font-weight: bold;
+    color: rgba(240, 240, 240,1);
+}
+
+.botones input:hover{
+    cursor:pointer;
+    background-color: rgba(45,45 ,46, 0.8);
+    color: #fff;
+}
+
+textarea{
+    background-color: rgba(45,45 ,46, 0);
+    font-size: 20px;
+    border: 2px solid #000;
+    width: 70%;
+}
+
+@media screen and (max-width: 970px) {
+
+    .imagen_contacto{
+        display: none;
+    }
+    
+    .main_contacto{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .motivo_div{
+        flex-direction: column;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    input{
+        width:70%;
+    }
+    
+}
+
+@media screen and (max-width: 300px) {
+
+    .contacto_h1{
+        font-size: 30px;
+    }
+
+    .contacto_h2{
+        font-size: 20px;
+    }
+}
+
+/* ---------------- FOOTER ------------------*/
+
+.footer{
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.footer_redes a img{
+    width: 50px;
+    margin: 5px 30px 10px 30px;
+}
+
+.derechos{
+    width: 50%;
+    border-top: 1px solid #000;
+    
+}
+.derechos p{
+    font-size: 10px;
+}
+
+@media screen and (max-width:600px) {
+    
+    .footer{
+        font-size: 50%;
+    }
+
+    .footer_redes a img{
+        width: 40px;
+        margin: 5px 10px 5px 10px;
+}
+
+}
+
