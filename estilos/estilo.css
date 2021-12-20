@@ -34,6 +34,9 @@
     align-items: center;
     margin-left: 30%;
     background-color: rgba(45,45 ,46, 1);
+    animation-name: efecto_nav;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
    
 }
 
@@ -44,6 +47,10 @@
     margin-right: 30px;
 
 }
+
+@keyframes efecto_nav{
+    0% {transform: translateX(100%);}
+    }
 
 .header_li a{
     background-color: rgba(45,45 ,46, 1);
